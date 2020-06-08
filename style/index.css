@@ -20,7 +20,7 @@ box-sizing: border-box;
 max-width: 100%;
 font-size: 62.5%;
 
-/*border: solid grey 1px;*/
+border: solid grey 1px;*/
 /*
 $old-lavender: #75607Aff;
 $gray-x-11-gray: #BEBAC0ff;
@@ -31,6 +31,7 @@ $light-steel-blue: #A5BBD0ff;
 
 }
 body{
+    margin:5%;
     background-color:#c4c2e2;
     color: #433740;
     text-transform: capitalize;
@@ -122,4 +123,41 @@ footer{
 footer button{
     height:5vh;
     font-size: 3rem;
+}
+@media(max-width:500px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2% auto;
+        flex-wrap: wrap;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    nav a{
+        padding:3%;
+        border: solid grey 2px;
+        width: 25%;
+        text-align: center;
+    }
+    .section1{
+        height: 35vh;
+    }
+    .section2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .row1, .row2{
+        display: inline-block;
+        width: 50%;
+    }
+    .pair{
+        margin:20% auto;
+    }
 }
