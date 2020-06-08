@@ -20,7 +20,7 @@ box-sizing: border-box;
 max-width: 100%;
 font-size: 62.5%;
 
-border: solid grey 1px;*/
+/*border: solid grey 1px;*/
 /*
 $old-lavender: #75607Aff;
 $gray-x-11-gray: #BEBAC0ff;
@@ -106,7 +106,7 @@ flex-wrap: wrap;
 width: 20vw;
 }
 .pair{
-    width:25vw;
+    width:30vw;
     margin: 4% auto;
 }
 .pair a{
@@ -126,10 +126,22 @@ footer button{
     font-size: 3rem;
 }
 @media(max-width:800px){
+    header{
+        justify-content: space-evenly;
+        margin: 3%;
+    }
+    nav{
+        width:60%;
+        justify-content: flex-start;
+        margin-top: 1%;
+    }
     nav a{
         text-align: center;
         padding: 2% 5%;
-        width: inherit;
+        width:25%;
+    }
+    .pair{
+        width: 30%;
     }
 }
 @media(max-width:500px) {
@@ -160,7 +172,7 @@ footer button{
     .section2{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     }
     .pair{
         margin:10% 1%;
