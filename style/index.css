@@ -150,14 +150,14 @@ footer button{
         height: 35vh;
     }
     .section2{
-        display: flex;
-        flex-wrap: wrap;
+    display:initial;
     }
     .row1, .row2{
-        display: inline-block;
-        width: 50%;
+        display: initial;
     }
     .pair{
-        margin:20% auto;
+        margin:10% 1%;
+        width: 40vw;
+        display: inline-block;    
     }
 }
