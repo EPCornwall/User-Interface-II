@@ -1,1 +1,188 @@
-/* Add CSS styling here */
+html, body, div, span, applet, object, iframe,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,  
+a, abbr, acronym, address, big, cite, code,  
+del, dfn, em, img, ins, kbd, q, s, samp,  
+small, strike, strong, sub, sup, tt, var,  
+b, u, i, center,  
+dl, dt, dd, ol, ul, li,  
+fieldset, form, label, legend,  
+table, caption, tbody, tfoot, thead, tr, th, td,  
+article, aside, canvas, details, embed,  
+figure, figcaption, footer, header, hgroup,  
+menu, nav, output, ruby, section, summary,  
+time, mark, audio, video {  
+margin: 0;  
+padding: 0;  
+border: 0;   
+font: inherit;  
+vertical-align: baseline;
+box-sizing: border-box;
+max-width: 100%;
+font-size: 62.5%;
+
+/*border: solid grey 1px;*/
+/*
+$old-lavender: #75607Aff;
+$gray-x-11-gray: #BEBAC0ff;
+$blizzard-blue: #AAE5EAff;
+$lavender-blue: #C4C2E3ff;
+$light-steel-blue: #A5BBD0ff;
+*/
+
+}
+body{
+    background-color:#c4c2e2;
+    color: #433740;
+    text-transform: capitalize;
+    width: 100vw;
+    border:0;
+}
+a{
+    text-decoration: none;
+    color: #756070;
+    background-color: #aae5ea;
+}
+a:visited{
+    color:#756070;
+}
+button{
+    background-color: #aae5ea;
+}
+header{
+display:flex;
+justify-content: space-between;
+align-items: center;
+margin: 2% auto;
+flex-wrap: wrap;
+}
+h1{
+font-size: 3rem;
+font-family: cursive;
+margin: 0 2%;
+text-align: center;
+}
+nav{
+font-size: 2.5rem;
+display: flex;
+width:40vw;
+justify-content: flex-end;
+margin: 0 2%;
+}
+nav a{
+    padding:2%;
+    border: solid grey 2px;
+    width: 20%;
+    text-align: center;
+}
+.section1{
+    background-image: url(https://images.unsplash.com/photo-1590542981877-b26ccfe72c34?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+    background-size: cover;
+    height:50vh;
+    margin: 2% 5%; 
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: cursive;
+}
+h2{
+    font-size:4rem;
+
+}
+.section1 button{
+    font-family: sans-serif;
+    font-size: 2rem;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+.section2{
+font-size: 10rem;
+text-align: center;
+display:flex;
+justify-content: space-evenly;
+margin: 3% 0; 
+flex-wrap: wrap;
+}
+.pair img{
+width: 20vw;
+}
+.pair{
+    width:30vw;
+    margin: 4% auto;
+}
+.pair a{
+    background-color: #c4c2e2;
+}
+footer{
+    text-align: center;
+    background-color:#bebac0;
+    height:20vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+footer button{
+    height:5vh;
+    font-size: 3rem;
+    display:flex;
+    align-items: center;
+}
+@media(max-width:800px){
+    header{
+        justify-content: space-evenly;
+        margin: 3%;
+    }
+    nav{
+        width:60%;
+        justify-content: flex-start;
+        margin-top: 1%;
+    }
+    nav a{
+        text-align: center;
+        padding: 2% 5%;
+        width:25%;
+    }
+    .pair{
+        width: 30%;
+    }
+}
+@media(max-width:500px) {
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 2% auto;
+        flex-wrap: wrap;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+    nav a{
+        padding:3%;
+        border: solid grey 2px;
+        width: 25%;
+        text-align: center;
+    }
+    .section1{
+        height: 35vh;
+    }
+    .section2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    }
+    .pair{
+        margin:10% 1%;
+        width: 40vw; 
+    }
+    .pair img{
+        width: 80%;
+    }
+}
